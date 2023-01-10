@@ -23,13 +23,14 @@
          alert('비밀번호는 5자 이상이어야 합니다.');
          return false;
       }
+      /*
       if(isNaN(document.loginForm.pw.value)){
          alert('비밀번호는 숫자만 입력가능합니다.');
          return false;
          
       }
       
-     /* 
+     
       for(var i=0;i<document.loginForm.id.value.length;i++){
     	var firstChar = document.loginForm.id.value.charAt(i);
     	  
@@ -38,6 +39,7 @@
     		 return false;
     	 }
       }
+      */
       
       var memberId = document.loginForm.id.value;
       var charCheck = /^[a-z|A-Z|ㄱ-ㅎ|]/;//아이디에 영문자 또는 한글을 제외한 값이 들어오면 false
@@ -47,7 +49,7 @@
     	  return false;
     	  
       }
-      */
+      
       
       var memberPw = document.loginForm.pw.value;
       var numCheck = /^[0-9]*$/; //숫자 or 공백
